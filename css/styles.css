@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 900;
+  color: #28283D;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 900;
+  color: black;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #87879D;
+}
+
+.overline {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 4px;
+  font-weight: 900;
+  color: #4D96A9;
+}
+
+.btnsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  font-weight: 900;
+  color: white;
+  border: none;
+  border-radius: 29px;
+  margin: 8px 0;
+  width: 193px;
+  height: 58px;
+  cursor: pointer;
+  background-color: #4D96A9;
+}
+
+.info {
+  width: 139px;
+  height: 58px;
+}
+
+.blue mark {
+  background-color: transparent;
+  color: #8FE3F9;
+}
+
+.blue:hover {
+  background-color: #8FE3F9;
+}
+
+.purple {
+  background-color: #855FB1;
+}
+
+.purple mark {
+  background-color: transparent;
+  color: #D9B8FF;
+}
+
+.purple:hover {
+  background-color: #D9B8FF;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 24px;
+  text-align: center;
+  margin: 28px 24px;
+  max-width: 327px;
+  place-content: center;
+}
+
+.start {
+  padding-top: 0;
+  margin: 0 24px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+.section .vertical-line {
+  width: 1px;
+  height: 84px;
+  background-color: rgba(135, 135, 157, 0.25);
+}
+.section .secnum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-color: rgba(135, 135, 157, 0.25);
+  border-radius: 28px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #FAFAFA;
+}
+
+* {
+  transition-duration: 0.3s;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #8FE3F9;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  z-index: -2;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 36px;
+}
+main .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .hero .hero1 {
+  margin-bottom: 48px;
+}
+main .hero .hero1 img {
+  width: calc(100vw + 35px);
+  max-width: none;
+}
+main .hero .hero2 {
+  display: none;
+}
+main .hero .start h1 {
+  margin: 0 20px;
+}
+main .imagesection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+main .imagesection img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+main .end {
+  padding-bottom: 0;
+}
+main .endpage {
+  position: relative;
+  top: 28px;
+}
+
+footer {
+  position: relative;
+  z-index: -1;
+  height: 428px;
+  background-image: url("../assets/mobile/image-footer.jpg");
+  background-size: cover;
+}
+footer .container {
+  margin: 0;
+  height: 100%;
+  max-width: 100%;
+  background-color: rgba(77, 150, 168, 0.9);
+}
+footer .container h2, footer .container p {
+  color: white;
+}
+
+/*Tablets*/
+@media only screen and (min-width: 481px) {
+  h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  p {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .container {
+    margin: 0 39px;
+    row-gap: 24px;
+    max-width: none;
+  }
+  .section {
+    margin-top: 80px;
+    margin-bottom: 67px;
+  }
+  header {
+    height: 140px;
+  }
+  main {
+    row-gap: 0;
+  }
+  main .hero .hero1 {
+    margin-bottom: 72px;
+  }
+  main .hero .start {
+    width: 457px;
+  }
+  main .hero .start h1 {
+    margin: 0 60px;
+  }
+  main .btnsection {
+    flex-direction: row;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  main .endpage {
+    margin-top: 52px;
+    margin-bottom: 0;
+  }
+  main .imagesection {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
+    -moz-column-gap: 11px;
+         column-gap: 11px;
+  }
+  main .end {
+    margin-top: 39px;
+  }
+  main .end h2 {
+    width: 445px;
+  }
+  main .end p {
+    width: 573px;
+  }
+  footer {
+    background-image: url("../assets/tablet/image-footer.jpg");
+  }
+  footer h2 {
+    width: 457px;
+  }
+  footer p {
+    width: 573px;
+  }
+  footer button {
+    margin-top: 16px;
+  }
+  footer .container {
+    padding-top: 18px;
+  }
+}
+/*Desktop*/
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .container {
+    margin: 0 88px;
+  }
+  header {
+    height: 170px;
+  }
+  .section {
+    margin-top: 110px;
+    margin-bottom: 64;
+  }
+  .container {
+    margin: 0 165px;
+  }
+  main .hero {
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+  }
+  main .hero .start {
+    margin: 0;
+    position: relative;
+    top: 18px;
+    width: auto;
+  }
+  main .hero .start h1 {
+    max-width: 445px;
+  }
+  main .hero .start p {
+    max-width: 540px;
+  }
+  main .hero .hero1 {
+    margin-bottom: 55px;
+  }
+  main .hero .hero1 img {
+    position: relative;
+    right: 30px;
+  }
+  main .hero .hero2 {
+    display: block;
+    margin-top: 55px;
+  }
+  main .hero .hero2 img {
+    position: relative;
+    left: 30px;
+    max-width: none;
+  }
+  main .hero .hero1 img, main .hero .hero2 img {
+    width: 30vw;
+  }
+  main .imagesection {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  main .end {
+    margin-top: 80px;
+  }
+  main .end p {
+    max-width: 540px;
+  }
+  main .endpage {
+    margin-top: 44px;
+  }
+  footer {
+    height: 308px;
+  }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: start;
+    padding: 0 165px;
+  }
+  footer .container h2, footer .container p {
+    width: 350px;
+  }
+}/*# sourceMappingURL=styles.css.map */
